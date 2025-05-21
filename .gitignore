@@ -1,0 +1,50 @@
+# ================================
+# Python e projeto IA
+# ================================
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Cache e bytecode
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Arquivos de log
+*.log
+
+# Arquivos de configuração locais
+.env
+.env.*
+
+# Modelos e dados pesados
+models/
+*.joblib
+*.pkl
+
+# Dados brutos (ex: JSON grandes)
+data/*.json
+data/*.csv
+!data/README.md
+
+
+# Arquivos de IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# MacOS
+.DS_Store
+
+# Arquivos de testes temporários
+tests/__pycache__/
+
+# Streamlit
+.streamlit/
