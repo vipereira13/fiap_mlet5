@@ -1,50 +1,72 @@
-# ================================
-# Python e projeto IA
-# ================================
-
-# Ambientes virtuais
-.venv/
-venv/
-env/
-
-# Cache e bytecode
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*.so
-*.egg
-*.egg-info/
-dist/
-build/
+*$py.class
 
-# Arquivos de log
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+.ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Log files
 *.log
 
-# Arquivos de configuração locais
+# Cache
+*.cache/
+*.pkl
+*.joblib
+
+# Streamlit
+.streamlit/config.toml
+
+# Modelos treinados e transformações
+models/
+checkpoints/
+
+# Dados
+data/*.csv
+data/*.xlsx
+data/*.json
+!data/.gitkeep  # Manter a pasta
+
+# Arquivo muito grande removido do versionamento
+data/applicants.json
+
+# Arquivos temporários
+*.tmp
+*.bak
+*.swp
+
+# Docker
+*.pid
+*.sock
+*.db
+
+# Credentials
 .env
 .env.*
 
-# Modelos e dados pesados
-models/
-*.joblib
-*.pkl
+# Testes
+htmlcov/
+coverage.xml
+.cache/
+.pytest_cache/
 
-# Dados brutos (ex: JSON grandes)
-data/*.json
-data/*.csv
-!data/README.md
-data/applicants.json
-
-# Arquivos de IDEs
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-
-# MacOS
-.DS_Store
-
-# Arquivos de testes temporários
-tests/__pycache__/
-
-# Streamlit
-.streamlit/
+# Arquivos gerados
+*.zip
+*.tar.gz
+*.rar
+*.7z
