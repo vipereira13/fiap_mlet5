@@ -32,7 +32,7 @@ models/
 data/*.json
 data/*.csv
 !data/README.md
-
+data/applicants.json
 
 # Arquivos de IDEs
 .vscode/
