@@ -16,7 +16,7 @@ if uploaded_file and vaga_texto:
     if st.button("🔍 Avaliar Candidato"):
         with st.spinner("Analisando dados..."):
             response = requests.post(
-                "http://127.0.0.1:8000/predict/",
+                "https://app-api-rh.onrender.com/predict/",
                 data={"vaga": vaga_texto},
                 files={"file": (uploaded_file.name, uploaded_file, "application/pdf")}
             )
