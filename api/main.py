@@ -40,6 +40,9 @@ def calcular_match_semantico(keywords_vaga, keywords_cv):
 #Carregar env
 load_dotenv()
 
+print("API KEY:", os.getenv("OPENAI_API_KEY"))
+
+
 #criar client da openai
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
